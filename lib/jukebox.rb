@@ -19,9 +19,9 @@ def play(songs)
   input = gets.strip
   songs.each_with_index do |song, index|
     if song == input || index == input
-      "Playing #{song}"
+      puts "Playing #{song}"
     else
-      "Invalid input, please try again"
+      puts "Invalid input, please try again"
     end
   end
 end
